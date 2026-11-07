@@ -60,7 +60,7 @@ export const BrandLogo = styled.div`
 `;
 
 export const NavGroup = styled.div`
-  background: #c5c561;
+  // background: #0606053c;
   border-radius: 100px;
   padding: 8px;
   display: flex;
@@ -69,7 +69,7 @@ export const NavGroup = styled.div`
   gap: 8px;
   width: 100%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
-  border: 1px solid #f3f4f6;
+  border: 1px solid #000206;
   box-sizing: border-box;
 
   @media (max-width: 768px) {
@@ -95,16 +95,16 @@ export const NavIconButton = styled.button<{ $active?: boolean }>`
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
+  // border:1px solid #ffff;
 
   &:hover {
     background-color: ${({ $active }) => ($active ? '#111827' : '#f3f4f6')};
-    color: ${({ $active }) => ($active ? '#ffffff' : '#4b5563')};
+    color: ${({ $active }) => ($active ? '#b8fe07' : '#05152a')};
   }
 
   svg {
     width: 20px;
     height: 20px;
-    fill: currentColor;
   }
 `;
 
@@ -117,7 +117,7 @@ export const UserAvatar = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #ffffff;
+  // border: 2px solid #ffffff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 
@@ -146,7 +146,7 @@ export const NavIconButtonWrapper = styled.div`
     top: 50%;
     transform: translateY(-50%) scale(0.85);
     background: #111827;
-    color: #ffffff;
+    color: #b8fe07;
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 11px;

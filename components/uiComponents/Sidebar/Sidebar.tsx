@@ -30,14 +30,16 @@ export function SideNavbar({
   secondaryItems = [],
   activeId,
   onSelect,
-  brandName = 'Be.run',
+  brandName = 'Present iT',
   userAvatarUrl = 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80',
 }: SideNavbarProps) {
   return (
     <NavContainer>
       {/* 1. Brand Logo */}
       <BrandLogo onClick={() => mainItems[0] && onSelect(mainItems[0].id)}>
-        <div className="logo-icon">▲</div>
+        <div className="logo-icon">
+            <img src="./favicon.ico" alt={brandName}/>
+        </div>
       </BrandLogo>
 
       {/* 2. Main Navigation Items */}
